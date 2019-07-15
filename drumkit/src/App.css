@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+body {
+  background-image: url(./assets/jared-rice-388260-unsplash.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+ .Information-Container {
+ grid-area: 2 / 2 / 6 / 2;
+}
+
+.Chakra-Container{
+  grid-area : 1 / 1 / 7 / 1;
+}

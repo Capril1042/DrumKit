@@ -1,0 +1,9 @@
+.ChakraOrb {
+    height:10vh;
+    width:10vw;
+    opacity: .5;
+    border: 1px solid white;
+    margin: 2%;
+    line-height:10vh;
+    color: white
+}
