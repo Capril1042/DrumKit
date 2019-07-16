@@ -29,7 +29,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
-    margin-top:2%;
+    margin-top:2%
   }
 
   body {
@@ -37,5 +37,10 @@ body {
     background-image: none;
     justify-content: center;
     margin: auto
+  }
+
+  .Information-Container, .Chakra-Container {
+    margin-top:5%;
+    height: 80vh
   }
 }
