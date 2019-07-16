@@ -7,3 +7,10 @@
     line-height:10vh;
     color: white
 }
+
+@media only screen and (max-width: 415px) {
+    .ChakraOrb {
+        height: 10vh;
+        width: 15vw;
+    }
+}
