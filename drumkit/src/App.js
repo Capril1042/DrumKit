@@ -12,11 +12,11 @@ function App() {
 
   const handleClick = e => {
     let chakraId = e.target.getAttribute("value");
-    console.log(typeof Number(chakraId));
     let newChakra = data.chakras.reverse()[Number(chakraId) - 1];
     setChakra({ chakra: newChakra });
     e.preventDefault();
 
+    console.log('App')
     console.log(chakra);
   };
 

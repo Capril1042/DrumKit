@@ -1,17 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./ChakraInfo.css";
 import "./Chakra.css";
 
 function ChakraInfo(props) {
-  // const [chakra]= useState(props.chakra);
-  // useEffect(()=> console.log(chakra));
+
+  const play = (url) => {
+    let audio = new Audio(url);
+    audio.play();
+    console.log(`${url} is playing`)
+    console.log('ChakraInfo')
+  }
+
   const information =
     props.data === null
-      ? console.log("undefined")
-      : console.log(props.data.chakra.nameEnglish);
+      ? <div>Information</div>
+      :
+      <div style={{ color: `${props.data.chakra.color}`}}>
+        <h1>{props.data.chakra.nameSanskrit}</h1>
+        <h2>{props.data.chakra.nameEnglish}</h2>
+        <p>description</p>
+        <button onClick={play(props.data.chakra.audio)}>play Singing bowl</button>
+      </div>;
   return (
     <div className="ChakraInfo">
-      Information
       {information}
     </div>
   );
